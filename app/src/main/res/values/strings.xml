@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Foco Aedes</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="save">SALVAR</string>
+    <string name="cancel">CANCELAR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

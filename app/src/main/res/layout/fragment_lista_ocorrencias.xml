@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branquinho"
+    tools:context="com.example.savio.focoaedes.fragments.Lista_OcorrenciasFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/lista_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/pretinho">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:id="@+id/lista_icone_ocorrencias"
+                android:layout_width="0dip"
+                android:layout_height="25dp"
+                android:layout_weight=".05"
+                android:src="@drawable/ic_location_on_black_24dp"
+                android:tint="@android:color/white"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/lista_qtd_titulo"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="Focos Reportados:"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/lista_qtds"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:text="0000"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lista_ocorrencias"
+        android:layout_below="@+id/lista_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:id="@+id/lista_final"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

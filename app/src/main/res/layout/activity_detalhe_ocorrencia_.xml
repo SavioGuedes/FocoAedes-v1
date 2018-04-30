@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+android:scrollbars="none">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branquinho"
+    tools:context="com.example.savio.focoaedes.fragments.Detalhes_OcorrenciaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/detalhe_imagem"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.8"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/detalhe_titulo"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:maxLength="22"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/detalhe_data"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/lista_foto"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/detalhe_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/lista_foto"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/detalhe_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

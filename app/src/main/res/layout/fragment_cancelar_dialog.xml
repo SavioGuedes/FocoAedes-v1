@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_cancelar_titulo"
+        android:text="Descartar ocorrência?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="2dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/dialog_cancelar_descricao"
+        android:text="Todas as suas informações registradas serão perdidas."
+        android:ems="14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="8dp"
+        android:textSize="18dp"
+        android:textColor="@android:color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1.0">
+
+        <TextView
+            android:id="@+id/dialog_cancelar_descartar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Descartar"
+            android:layout_weight="0.4"
+            android:layout_margin="10dp"
+            android:paddingLeft="8dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="40dp"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/dialog_cancelar_manter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Manter"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:paddingLeft="8dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

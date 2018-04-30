@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.savio.focoaedes.MainActivity">
+
+    <include layout="@layout/content_main" />
+
+    <LinearLayout
+        android:id="@+id/fab_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/float_change_bg"
+        android:backgroundTint="@color/branquinho"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:elevation="5dp"
+        android:layout_gravity="bottom">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fab_lista"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_menu_black_24dp"
+            android:background="@drawable/float_change_bg"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fab_mapa"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:padding="5dp"
+            android:src="@android:drawable/ic_dialog_map"
+            android:background="@drawable/float_change_bg"
+            android:backgroundTint="@color/pretinho"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="160dp"
+        app:srcCompat="@drawable/ic_info_outline_black_24dp"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/vermelhudo"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_nova_ocorrencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="88dp"
+        app:srcCompat="@drawable/ic_add_location_black_24dp"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/pretinho"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@mipmap/ic_add_custom"
+        app:backgroundTint="@color/branquinho"
+        app:pressedTranslationZ="12dp"/>
+
+</android.support.design.widget.CoordinatorLayout>
